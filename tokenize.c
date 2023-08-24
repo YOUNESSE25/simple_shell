@@ -2,6 +2,7 @@
 /**
  * tokenize - separate the string
  * @data: pointer program
+ * Return: array parts string
  */
 void tokenize(data_program *data)
 {
@@ -33,7 +34,5 @@ void tokenize(data_program *data)
 	data->command_name = str_duplicate(data->tokens[0]);
 
 	while (data->tokens[i++])
-		{
-			data->tokens[i] = str_duplicate(_strtok(NULL, delim));
-		}
+		data->tokens[i] = str_duplicate(_strtok(NULL, delim));
 }

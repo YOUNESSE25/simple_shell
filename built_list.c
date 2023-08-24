@@ -7,7 +7,7 @@
 int builtins_list(data_program *data)
 {
 	int iterator;
-	bloc_info options[] = {
+	 builtin options[] = {
 		{"exit", builtin_exit},
 		{"help", builtin_help},
 		{"cd", builtin_cd},
@@ -17,9 +17,9 @@ int builtins_list(data_program *data)
 		{"unsetenv", builtin_unset_env},
 		{NULL, NULL}
 	};
-	for (iterator = 0; options[iterator].bloc_info != NULL; iterator++)
+	for (iterator = 0; options[iterator].builtin != NULL; iterator++)
 	{
-		if (str_compare(options[iterator].bloc_info, data->command_name, 0))
+		if (str_compare(options[iterator].builtin, data->command_name, 0))
 		{
 			return (options[iterator].function(data));
 		}

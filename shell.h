@@ -38,14 +38,14 @@ typedef struct info
 } data_program;
 /**
  * struct bloc_info - struct builtins
- * @bloc_info: bloc_info name
+ * @ builtin:  builtin name
  * @function: associated func colled for builtin
  */
-typedef struct bloc_info
+typedef struct  builtin
 {
-	char *bloc_info;
+	char * builtin;
 	int (*function)(data_program *data);
-} bloc_info;
+}  builtin;
 
 void inicialize_data(data_program *data, int arc, char *argv[], char **env);
 void sisifo(char *prompt, data_program *data);

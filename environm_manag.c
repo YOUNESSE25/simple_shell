@@ -94,4 +94,4 @@ void print_environ(data_program *data)
 		_print(data->env[j]);
 		_print("\n");
 	}
-}	
+}

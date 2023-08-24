@@ -37,8 +37,8 @@ typedef struct info
 	char **alias_list;
 } data_program;
 /**
- * struct builtins - struct builtins
- * @builtin: builtin name
+ * struct bloc_info - struct builtins
+ * @bloc_info: bloc_info name
  * @function: associated func colled for builtin
  */
 typedef struct bloc_info

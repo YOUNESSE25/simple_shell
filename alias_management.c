@@ -38,10 +38,10 @@ int print_alias(data_program *data, char *alias)
 /**
  * get_alias - add, remove, show
  * @data: structur data
- * @alias: name of the alias
+ * @name: name of the alias
  * Return: char
  */
-char *get_alias(data_program *data,char *name)
+char *get_alias(data_program *data, char *name)
 {
 	int i, alias_length;
 
@@ -72,7 +72,7 @@ int set_alias(char *alias_string, data_program *data)
 
 	if (alias_string == NULL || data->alias_list == NULL)
 		return (1);
-	for(i = 0; alias_string[i]; i++)
+	for (i = 0; alias_string[i]; i++)
 	{
 		if (alias_string[i] != '=')
 			buffer[i] = alias_string[i];

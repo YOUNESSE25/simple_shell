@@ -3,6 +3,7 @@
  * long_to_string - number to string
  * @number: number
  * @string: string buffer
+ * @base: base of convrt number
  */
 void long_to_string(long number, char *string, int base)
 {
@@ -29,7 +30,7 @@ void long_to_string(long number, char *string, int base)
 	str_reverse(string);
 }
 /**
- * cont_characters - count caracter in string
+ * count_characters - count caracter in string
  * @string: pointer string
  * @character: string
  * Return: int
@@ -39,7 +40,7 @@ int count_characters(char *string, char *character)
 	int i = 0;
 	int c = 0;
 
-	for(; string[i]; i++)
+	for (; string[i]; i++)
 	{
 		if (string[i] == character[0])
 			c++;

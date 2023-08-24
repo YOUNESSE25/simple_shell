@@ -37,15 +37,15 @@ typedef struct info
 	char **alias_list;
 } data_program;
 /**
- * struct bloc_info - struct builtins
- * @ builtin:  builtin name
+ * struct builtin - struct builtins
+ * @builtin: builtin name
  * @function: associated func colled for builtin
  */
-typedef struct  builtin
+typedef struct builtin
 {
-	char * builtin;
+	char *builtin;
 	int (*function)(data_program *data);
-}  builtin;
+} builtin;
 
 void inicialize_data(data_program *data, int arc, char *argv[], char **env);
 void sisifo(char *prompt, data_program *data);
